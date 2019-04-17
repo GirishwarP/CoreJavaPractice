@@ -10,8 +10,8 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 		
 		initialize(arrList1);
-		//Collections.sort(arrList, new DescendingOrder());
-		//Collections.sort(arrList, new LastDigitSorting());
+		Collections.sort(arrList1, new DescendingOrder());
+		Collections.sort(arrList1, new LastDigitSorting());
 		//arrList.sort(new LastDigitSorting());
 		print(arrList1);
 		

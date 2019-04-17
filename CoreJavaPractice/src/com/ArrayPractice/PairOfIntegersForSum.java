@@ -20,11 +20,26 @@ public class PairOfIntegersForSum {
 		System.out.print("\nGiven Array : ");
 		printArray(array);
 		
-		
+		System.out.println("\nGive Number : ");
+		int sum = sc.nextInt();
+		System.out.println("Possible Pairs are ;");
+		pairsOfIntegers(array, sum);
 	}
 
-	private static void printArray(int[] array) {
+	private static void pairsOfIntegers(int[] array, int sum) {
+			for(int i=0; i<array.length; i++) {
+				for(int j=i+1; j<array.length; j++) {
+					if(array[i] + array[j] == sum) {
+						System.out.println(array[i] + ", " + array[j]);
+						
+					}
+					else
+						System.out.println("No Pairs");
+				}
+			}
+		}
 
+	private static void printArray(int[] array) {
 		for(int i=0; i<array.length; i++) {
 			System.out.print(array[i]+" ");
 		}

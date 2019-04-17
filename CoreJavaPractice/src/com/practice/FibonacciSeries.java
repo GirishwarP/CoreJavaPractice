@@ -10,8 +10,8 @@ public class FibonacciSeries {
 		System.out.println("Number : ");
 		int num = sc.nextInt();
 		
-		int first = 1;
-		int second = 0;
+		int first = 0;
+		int second = 1;
 		int sum = 0;
 		
 		while(num > 0) {

@@ -13,8 +13,7 @@ public class FibonacciSeriesRecursive {
 		System.out.println("Number : ");
 		int num = sc.nextInt();
 		
-		System.out.print(first + " " + second);
-		fibonacci(num - 2); // -2 because 2 numbers are already printed
+		fibonacci(num);
 	}
 
 	private static void fibonacci(int num) {
@@ -22,7 +21,7 @@ public class FibonacciSeriesRecursive {
 			sum = first + second;
 			first = second;
 			second = sum;
-			System.out.print(" " + sum);
+			System.out.print(sum + " ");
 			fibonacci(num-1);
 		}
 	}
