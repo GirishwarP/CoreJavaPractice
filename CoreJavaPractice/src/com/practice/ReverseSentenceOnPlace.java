@@ -10,11 +10,6 @@ public class ReverseSentenceOnPlace {
 		Scanner sc = new Scanner(System.in);
 		String string = sc.nextLine();
 		
-		
-		//split("[^\\w]+");
-		//split("\\,|\\s+");
-		//split("\\,|\\s+");
-		
 		String[] sArray = string.split(" ");
 		String[] reverseArray = new String[sArray.length];
 		
